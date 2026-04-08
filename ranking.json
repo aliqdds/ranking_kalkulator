@@ -1,5 +1,472 @@
 {
-  "updated_at": null,
-  "source": "Uoffisiell datasamling",
-  "classes": {}
+  "updated_at": "2026-04-08 16:22 UTC",
+  "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
+  "classes": {
+    "Herrer Elite": [
+      {
+        "rank": 11,
+        "name": "Mathias Halvorsen",
+        "points": -72
+      },
+      {
+        "rank": 22,
+        "name": "Sebastian Konow",
+        "points": -72
+      },
+      {
+        "rank": 38,
+        "name": "Filip Dagslett",
+        "points": -72
+      },
+      {
+        "rank": 41,
+        "name": "Lasse Bekkebrten",
+        "points": -72
+      },
+      {
+        "rank": 43,
+        "name": "Tom Albert Johansen",
+        "points": -72
+      },
+      {
+        "rank": 46,
+        "name": "Jonas Flien",
+        "points": -72
+      },
+      {
+        "rank": 66,
+        "name": "Cedric Mhle",
+        "points": -72
+      },
+      {
+        "rank": 84,
+        "name": "Eivind Onsum",
+        "points": -72
+      },
+      {
+        "rank": 91,
+        "name": "Victor Horgen",
+        "points": -72
+      },
+      {
+        "rank": 123,
+        "name": "Jon Olav Haugen",
+        "points": -72
+      },
+      {
+        "rank": 146,
+        "name": "Harry Nilsen",
+        "points": -72
+      },
+      {
+        "rank": 147,
+        "name": "Jacob Wethal Halse",
+        "points": -72
+      },
+      {
+        "rank": 157,
+        "name": "Jrgen Gravseth",
+        "points": -72
+      },
+      {
+        "rank": 161,
+        "name": "Pablo Jacobsen",
+        "points": -72
+      },
+      {
+        "rank": 176,
+        "name": "Fredrik Aas Bakkelund",
+        "points": -72
+      }
+    ],
+    "Damer Elite": [
+      {
+        "rank": 2,
+        "name": "Christine Kalvatn",
+        "points": -72
+      },
+      {
+        "rank": 3,
+        "name": "Martine Toftaker",
+        "points": -72
+      },
+      {
+        "rank": 4,
+        "name": "Rikke Balgaard Skttet",
+        "points": -72
+      },
+      {
+        "rank": 5,
+        "name": "Susanne Flor Wilhelmsen",
+        "points": -72
+      },
+      {
+        "rank": 7,
+        "name": "Anne Sophie Kalvatn",
+        "points": -72
+      },
+      {
+        "rank": 13,
+        "name": "Sarah Horgen",
+        "points": -72
+      },
+      {
+        "rank": 14,
+        "name": "Marthe Heide Nilsen",
+        "points": -72
+      },
+      {
+        "rank": 15,
+        "name": "Maria Linea Horgen",
+        "points": -72
+      },
+      {
+        "rank": 16,
+        "name": "Vivian Huynh",
+        "points": -72
+      },
+      {
+        "rank": 18,
+        "name": "Aida Pezer",
+        "points": -72
+      },
+      {
+        "rank": 28,
+        "name": "Kristin Nordhelle",
+        "points": -72
+      },
+      {
+        "rank": 29,
+        "name": "Beate Adrianne Haraldseid",
+        "points": -72
+      },
+      {
+        "rank": 32,
+        "name": "Nini Do Vo",
+        "points": -72
+      },
+      {
+        "rank": 33,
+        "name": "Mirga Kuraityte",
+        "points": -72
+      },
+      {
+        "rank": 36,
+        "name": "Malene Karlsrud",
+        "points": -72
+      },
+      {
+        "rank": 42,
+        "name": "Emma Kjls",
+        "points": -72
+      },
+      {
+        "rank": 56,
+        "name": "Heidi Jeanette Haugen",
+        "points": -72
+      },
+      {
+        "rank": 98,
+        "name": "Isabell Stanger",
+        "points": -72
+      },
+      {
+        "rank": 111,
+        "name": "Maria Huse",
+        "points": -72
+      },
+      {
+        "rank": 147,
+        "name": "Torill Wertebach",
+        "points": -72
+      }
+    ],
+    "Herrer Junior": [
+      {
+        "rank": 2,
+        "name": "Mathias Halvorsen",
+        "points": -72
+      },
+      {
+        "rank": 4,
+        "name": "Sebastian Konow",
+        "points": -72
+      },
+      {
+        "rank": 8,
+        "name": "Filip Dagslett",
+        "points": -72
+      },
+      {
+        "rank": 9,
+        "name": "Lasse Bekkebrten",
+        "points": -72
+      },
+      {
+        "rank": 12,
+        "name": "Cedric Mhle",
+        "points": -72
+      },
+      {
+        "rank": 26,
+        "name": "Jacob Wethal Halse",
+        "points": -72
+      },
+      {
+        "rank": 30,
+        "name": "Jrgen Gravseth",
+        "points": -72
+      },
+      {
+        "rank": 72,
+        "name": "Daniel Huse",
+        "points": -72
+      },
+      {
+        "rank": 80,
+        "name": "Mihajlo Arsic",
+        "points": -72
+      },
+      {
+        "rank": 91,
+        "name": "Elias Almng",
+        "points": -72
+      },
+      {
+        "rank": 120,
+        "name": "Simon Almng",
+        "points": -72
+      },
+      {
+        "rank": 134,
+        "name": "Mathias Bols Holthe Lagerlv",
+        "points": -72
+      },
+      {
+        "rank": 141,
+        "name": "Ayaan Khan",
+        "points": -72
+      },
+      {
+        "rank": 155,
+        "name": "Aldric Kenarlikdijan",
+        "points": -72
+      },
+      {
+        "rank": 198,
+        "name": "David Evensen",
+        "points": -72
+      },
+      {
+        "rank": 198,
+        "name": "Sondre Ryan",
+        "points": -72
+      },
+      {
+        "rank": 206,
+        "name": "Olai Aaserud",
+        "points": -72
+      },
+      {
+        "rank": 247,
+        "name": "Taras Moroz",
+        "points": -72
+      }
+    ],
+    "Damer Junior": [
+      {
+        "rank": 5,
+        "name": "Beate Adrianne Haraldseid",
+        "points": -72
+      },
+      {
+        "rank": 7,
+        "name": "Malene Karlsrud",
+        "points": -72
+      },
+      {
+        "rank": 10,
+        "name": "Emma Kjls",
+        "points": -72
+      },
+      {
+        "rank": 21,
+        "name": "Isabell Stanger",
+        "points": -72
+      },
+      {
+        "rank": 25,
+        "name": "Maria Huse",
+        "points": -72
+      }
+    ],
+    "Gutter 15": [
+      {
+        "rank": 3,
+        "name": "Lasse Bekkebrten",
+        "points": -72
+      },
+      {
+        "rank": 4,
+        "name": "Cedric Mhle",
+        "points": -72
+      },
+      {
+        "rank": 10,
+        "name": "Jacob Wethal Halse",
+        "points": -72
+      },
+      {
+        "rank": 12,
+        "name": "Jrgen Gravseth",
+        "points": -72
+      },
+      {
+        "rank": 29,
+        "name": "Daniel Huse",
+        "points": -72
+      },
+      {
+        "rank": 34,
+        "name": "Mihajlo Arsic",
+        "points": -72
+      },
+      {
+        "rank": 40,
+        "name": "Elias Almng",
+        "points": -72
+      },
+      {
+        "rank": 56,
+        "name": "Simon Almng",
+        "points": -72
+      },
+      {
+        "rank": 64,
+        "name": "Mathias Bols Holthe Lagerlv",
+        "points": -72
+      },
+      {
+        "rank": 100,
+        "name": "David Evensen",
+        "points": -72
+      },
+      {
+        "rank": 133,
+        "name": "Taras Moroz",
+        "points": -72
+      },
+      {
+        "rank": 135,
+        "name": "Samuel Eikenes Sjli",
+        "points": -72
+      },
+      {
+        "rank": 182,
+        "name": "Jon Randby Rojak",
+        "points": -72
+      },
+      {
+        "rank": 199,
+        "name": "Ulrik Thomas Engelhart",
+        "points": -72
+      }
+    ],
+    "Jenter 15": [
+      {
+        "rank": 3,
+        "name": "Malene Karlsrud",
+        "points": -72
+      },
+      {
+        "rank": 5,
+        "name": "Emma Kjls",
+        "points": -72
+      },
+      {
+        "rank": 15,
+        "name": "Maria Huse",
+        "points": -72
+      }
+    ],
+    "Gutter 13": [
+      {
+        "rank": 4,
+        "name": "Jrgen Gravseth",
+        "points": -72
+      },
+      {
+        "rank": 19,
+        "name": "Elias Almng",
+        "points": -72
+      },
+      {
+        "rank": 22,
+        "name": "Simon Almng",
+        "points": -72
+      },
+      {
+        "rank": 25,
+        "name": "Mathias Bols Holthe Lagerlv",
+        "points": -72
+      },
+      {
+        "rank": 42,
+        "name": "David Evensen",
+        "points": -72
+      },
+      {
+        "rank": 60,
+        "name": "Taras Moroz",
+        "points": -72
+      },
+      {
+        "rank": 79,
+        "name": "Jon Randby Rojak",
+        "points": -72
+      },
+      {
+        "rank": 87,
+        "name": "Ulrik Thomas Engelhart",
+        "points": -72
+      },
+      {
+        "rank": 152,
+        "name": "Henry Ngoc Nguyen",
+        "points": -72
+      },
+      {
+        "rank": 183,
+        "name": "Jonas Nordby",
+        "points": -72
+      },
+      {
+        "rank": 193,
+        "name": "Nicolai Frankplads",
+        "points": -72
+      },
+      {
+        "rank": 222,
+        "name": "Magnus Bjrnebrten Paulsen",
+        "points": -72
+      },
+      {
+        "rank": 222,
+        "name": "Aditya Kolan",
+        "points": -72
+      }
+    ],
+    "Jenter 13": [
+      {
+        "rank": 7,
+        "name": "Maria Huse",
+        "points": -72
+      },
+      {
+        "rank": 22,
+        "name": "Maja Kepkowska",
+        "points": -72
+      }
+    ]
+  }
 }
