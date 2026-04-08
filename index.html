@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uoffisiell NBTF Ranking Kalkulator</title>
+  <meta name="description" content="Uoffisiell rankingkalkulator for bordtennis" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Ranking Kalkulator</h1>
+    <p class="intro">
+      Uoffisiell kalkulator basert på offentlig tilgjengelige rankingregler.
+    </p>
+
+    <label for="klasse">Rankingklasse</label>
+    <select id="klasse"></select>
+    <div id="status" class="hint">Laster ranking…</div>
+
+    <hr />
+
+    <label for="spillerSelect">Spiller</label>
+    <select id="spillerSelect">
+      <option value="">— velg fra liste —</option>
+    </select>
+
+    <label for="spiller">Eller skriv spillerens poeng manuelt</label>
+    <input type="number" id="spiller" placeholder="f.eks. 1850" />
+
+    <label for="motstanderSelect">Motstander</label>
+    <select id="motstanderSelect">
+      <option value="">— velg fra liste —</option>
+    </select>
+
+    <label for="motstander">Eller skriv motstanderens poeng manuelt</label>
+    <input type="number" id="motstander" placeholder="f.eks. 1975" />
+
+    <label for="turnering">Turneringstype</label>
+    <select id="turnering">
+      <option value="2">NM Senior Elite (x2)</option>
+      <option value="2">SNC Senior (x2)</option>
+      <option value="1.5">NM Aldersbestemt (x1.5)</option>
+      <option value="1.5">Eliteserien (x1.5)</option>
+      <option value="1" selected>Andre stevner (x1)</option>
+    </select>
+
+    <label for="resultat">Resultat</label>
+    <select id="resultat">
+      <option value="vant">Vant</option>
+      <option value="tapte">Tapte</option>
+    </select>
+
+    <button id="beregnBtn" type="button">Beregn poeng</button>
+
+    <section id="output" class="result" aria-live="polite"></section>
+
+    <p class="footer">
+      Ikke tilknyttet NBTF. Kontroller alltid offisiell ranking og reglement hos NBTF. NBTF opplyser at OnlineRanking normalt publiseres den 1. i hver måned. :contentReference[oaicite:1]{index=1}
+    </p>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
