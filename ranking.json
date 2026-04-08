@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-08 16:22 UTC",
+  "updated_at": "2026-04-08 16:27 UTC",
   "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
   "classes": {
     "Herrer Elite": [
@@ -389,84 +389,7 @@
         "points": -72
       }
     ],
-    "Gutter 13": [
-      {
-        "rank": 4,
-        "name": "Jrgen Gravseth",
-        "points": -72
-      },
-      {
-        "rank": 19,
-        "name": "Elias Almng",
-        "points": -72
-      },
-      {
-        "rank": 22,
-        "name": "Simon Almng",
-        "points": -72
-      },
-      {
-        "rank": 25,
-        "name": "Mathias Bols Holthe Lagerlv",
-        "points": -72
-      },
-      {
-        "rank": 42,
-        "name": "David Evensen",
-        "points": -72
-      },
-      {
-        "rank": 60,
-        "name": "Taras Moroz",
-        "points": -72
-      },
-      {
-        "rank": 79,
-        "name": "Jon Randby Rojak",
-        "points": -72
-      },
-      {
-        "rank": 87,
-        "name": "Ulrik Thomas Engelhart",
-        "points": -72
-      },
-      {
-        "rank": 152,
-        "name": "Henry Ngoc Nguyen",
-        "points": -72
-      },
-      {
-        "rank": 183,
-        "name": "Jonas Nordby",
-        "points": -72
-      },
-      {
-        "rank": 193,
-        "name": "Nicolai Frankplads",
-        "points": -72
-      },
-      {
-        "rank": 222,
-        "name": "Magnus Bjrnebrten Paulsen",
-        "points": -72
-      },
-      {
-        "rank": 222,
-        "name": "Aditya Kolan",
-        "points": -72
-      }
-    ],
-    "Jenter 13": [
-      {
-        "rank": 7,
-        "name": "Maria Huse",
-        "points": -72
-      },
-      {
-        "rank": 22,
-        "name": "Maja Kepkowska",
-        "points": -72
-      }
-    ]
+    "Gutter 13": [],
+    "Jenter 13": []
   }
 }
