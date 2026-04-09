@@ -118,15 +118,15 @@ def normalize(text):
     return re.sub(r"\s+", " ", (text or "").strip()).lower()
 
 
-def to_int(value):
-    text = str(value).strip().replace(" ", "")
-    text = re.sub(r"[^\d\-]", "", text)
-    if not text or text == "-":
-        return None
-    if len(text.lstrip("-")) > 5:
+def to_number(value):
+    """Parse en tekst-verdi til et tall. Returnerer float avrundet til int, eller None."""
+    text = str(value).strip().replace(" ", "").replace(",", ".")
+    # Fjern alt unntatt siffer, minus og punktum
+    text = re.sub(r"[^\d\.\-]", "", text)
+    if not text or text in ("-", "."):
         return None
     try:
-        return int(text)
+        return round(float(text))
     except Exception:
         return None
 
@@ -208,7 +208,7 @@ def detect_columns(header, sample_rows):
             values = []
             for row in sample_rows[:20]:
                 if i < len(row):
-                    num = to_int(row[i])
+                    num = to_number(row[i])
                     if num is not None:
                         values.append(num)
 
@@ -240,6 +240,13 @@ def detect_columns(header, sample_rows):
     return rank_idx, name_idx, points_idx
 
 
+def has_header(first_row):
+    """Sjekk om første rad ser ut som en header (inneholder tekst-nøkkelord, ikke data)."""
+    joined = " ".join(first_row).lower()
+    header_keywords = ("plass", "rank", "navn", "spiller", "poeng", "rating", "klubb", "#")
+    return any(kw in joined for kw in header_keywords)
+
+
 def parse_players(html, class_name="ukjent"):
     parser = MultiTableParser()
     parser.feed(html)
@@ -249,20 +256,28 @@ def parse_players(html, class_name="ukjent"):
         return []
 
     table = choose_best_table(parser.tables)
-    if len(table) < 2:
+    if len(table) < 1:
         print(f"[{class_name}] Fant ingen gyldig rankingtabell.")
         return []
 
-    header = table[0]
-    sample_rows = table[1: min(len(table), 15)]
+    # Sjekk om første rad er en header eller data
+    if has_header(table[0]):
+        header = table[0]
+        data_rows = table[1:]
+        print(f"[{class_name}] Header funnet: {header}")
+    else:
+        header = table[0]  # Bruk første rad for kolonnedeteksjon
+        data_rows = table  # Men inkluder den i dataen også
+        print(f"[{class_name}] Ingen header funnet, bruker alle rader som data.")
+
+    sample_rows = data_rows[:min(len(data_rows), 15)]
     rank_idx, name_idx, points_idx = detect_columns(header, sample_rows)
 
-    print(f"[{class_name}] Header: {header}")
     print(f"[{class_name}] Kolonner valgt -> rank={rank_idx}, navn={name_idx}, poeng={points_idx}")
 
     players = []
 
-    for row in table[1:]:
+    for row in data_rows:
         needed = max(rank_idx, name_idx, points_idx)
         if len(row) <= needed:
             continue
@@ -271,7 +286,7 @@ def parse_players(html, class_name="ukjent"):
         if not looks_like_name(name):
             continue
 
-        points = to_int(row[points_idx])
+        points = to_number(row[points_idx])
         if points is None:
             continue
 
@@ -282,7 +297,7 @@ def parse_players(html, class_name="ukjent"):
             print(f"[{class_name}] Advarsel: {name} har {points} poeng (over {MAX_REASONABLE_POINTS}). Hopper over.")
             continue
 
-        rank = to_int(row[rank_idx])
+        rank = to_number(row[rank_idx])
 
         players.append({
             "rank": rank,
