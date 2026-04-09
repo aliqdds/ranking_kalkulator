@@ -7,6 +7,8 @@ import re
 import time
 
 
+MAX_REASONABLE_POINTS = 5000
+
 CLASSES = [
     ("Herrer Elite", "https://rolpau.com/nbtf-ranking.asp?reg=alle&kl=MFFsenior&kj=M&funk=FF"),
     ("Damer Elite", "https://rolpau.com/nbtf-ranking.asp?reg=alle&kl=KFFsenior&kj=K&funk=FF"),
@@ -120,6 +122,8 @@ def to_int(value):
     text = str(value).strip().replace(" ", "")
     text = re.sub(r"[^\d\-]", "", text)
     if not text or text == "-":
+        return None
+    if len(text.lstrip("-")) > 5:
         return None
     try:
         return int(text)
@@ -271,8 +275,11 @@ def parse_players(html, class_name="ukjent"):
         if points is None:
             continue
 
-        # Filtrer bort åpenbart feil kolonnevalg som -72 osv.
         if points < 0:
+            continue
+
+        if points > MAX_REASONABLE_POINTS:
+            print(f"[{class_name}] Advarsel: {name} har {points} poeng (over {MAX_REASONABLE_POINTS}). Hopper over.")
             continue
 
         rank = to_int(row[rank_idx])

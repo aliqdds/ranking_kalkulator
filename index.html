@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="no">
+<html lang="nb">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Uoffisiell NBTF Ranking Kalkulator</title>
   <meta name="description" content="Uoffisiell rankingkalkulator for bordtennis" />
+  <link rel="icon" href="data:," />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,21 +21,31 @@
 
     <hr />
 
-    <label for="spillerSelect">Spiller</label>
-    <select id="spillerSelect">
-      <option value="">— velg fra liste —</option>
-    </select>
+    <div class="grid">
+      <div class="grid-col">
+        <label for="spillerSearch">Spiller</label>
+        <div class="search-wrapper">
+          <input type="text" id="spillerSearch" autocomplete="off" placeholder="Søk spiller..." />
+          <div class="search-dropdown" id="spillerDropdown"></div>
+        </div>
+        <input type="hidden" id="spillerIndex" value="" />
 
-    <label for="spiller">Eller skriv spillerens poeng manuelt</label>
-    <input type="number" id="spiller" placeholder="f.eks. 1850" />
+        <label for="spiller">Eller skriv poeng manuelt</label>
+        <input type="number" id="spiller" placeholder="f.eks. 1850" min="0" max="5000" step="1" />
+      </div>
 
-    <label for="motstanderSelect">Motstander</label>
-    <select id="motstanderSelect">
-      <option value="">— velg fra liste —</option>
-    </select>
+      <div class="grid-col">
+        <label for="motstanderSearch">Motstander</label>
+        <div class="search-wrapper">
+          <input type="text" id="motstanderSearch" autocomplete="off" placeholder="Søk motstander..." />
+          <div class="search-dropdown" id="motstanderDropdown"></div>
+        </div>
+        <input type="hidden" id="motstanderIndex" value="" />
 
-    <label for="motstander">Eller skriv motstanderens poeng manuelt</label>
-    <input type="number" id="motstander" placeholder="f.eks. 1975" />
+        <label for="motstander">Eller skriv poeng manuelt</label>
+        <input type="number" id="motstander" placeholder="f.eks. 1975" min="0" max="5000" step="1" />
+      </div>
+    </div>
 
     <label for="turnering">Turneringstype</label>
     <select id="turnering">
@@ -45,18 +56,14 @@
       <option value="1" selected>Andre stevner (x1)</option>
     </select>
 
-    <label for="resultat">Resultat</label>
-    <select id="resultat">
-      <option value="vant">Vant</option>
-      <option value="tapte">Tapte</option>
-    </select>
-
     <button id="beregnBtn" type="button">Beregn poeng</button>
 
     <section id="output" class="result" aria-live="polite"></section>
 
+    <section id="historikk"></section>
+
     <p class="footer">
-      Ikke tilknyttet NBTF. Kontroller alltid offisiell ranking og reglement hos NBTF. NBTF opplyser at OnlineRanking normalt publiseres den 1. i hver måned. :contentReference[oaicite:1]{index=1}
+      Ikke tilknyttet NBTF. Kontroller alltid offisiell ranking og reglement hos NBTF. NBTF opplyser at OnlineRanking normalt publiseres den 1. i hver måned.
     </p>
   </main>
 

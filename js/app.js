@@ -4,6 +4,9 @@ let rankingData = {
   classes: {}
 };
 
+const history = [];
+const MAX_HISTORY = 5;
+
 function hentPoengEndring(diff, vant, uventet) {
   const tabell = [
     { min: 0,   max: 0,   uventetSeier: 8,  uventetTap: -7,  forventetSeier: 8, forventetTap: -7 },
@@ -61,33 +64,13 @@ function populateClasses() {
 
 function populatePlayers(className) {
   const players = rankingData.classes[className] || [];
-  const spillerSel = document.getElementById("spillerSelect");
-  const motstanderSel = document.getElementById("motstanderSelect");
 
-  spillerSel.innerHTML = "";
-  motstanderSel.innerHTML = "";
-
-  const placeholder1 = document.createElement("option");
-  placeholder1.value = "";
-  placeholder1.textContent = "— velg fra liste —";
-  spillerSel.appendChild(placeholder1);
-
-  const placeholder2 = document.createElement("option");
-  placeholder2.value = "";
-  placeholder2.textContent = "— velg fra liste —";
-  motstanderSel.appendChild(placeholder2);
-
-  players.forEach((player, index) => {
-    const opt1 = document.createElement("option");
-    opt1.value = String(index);
-    opt1.textContent = formatPlayer(player);
-    spillerSel.appendChild(opt1);
-
-    const opt2 = document.createElement("option");
-    opt2.value = String(index);
-    opt2.textContent = formatPlayer(player);
-    motstanderSel.appendChild(opt2);
-  });
+  document.getElementById("spillerSearch").value = "";
+  document.getElementById("motstanderSearch").value = "";
+  document.getElementById("spillerIndex").value = "";
+  document.getElementById("motstanderIndex").value = "";
+  document.getElementById("spiller").value = "";
+  document.getElementById("motstander").value = "";
 
   if (rankingData.updated_at) {
     setStatus(`Oppdatert: ${rankingData.updated_at} · spillere lastet: ${players.length}`);
@@ -96,56 +79,157 @@ function populatePlayers(className) {
   }
 }
 
-function syncPointsFromSelect(inputId, selectId, className) {
-  const input = document.getElementById(inputId);
-  const select = document.getElementById(selectId);
+// --- Searchable dropdown logic ---
+
+function filterPlayers(query, className) {
   const players = rankingData.classes[className] || [];
-
-  if (select.value === "") return;
-
-  const index = Number.parseInt(select.value, 10);
-  if (Number.isInteger(index) && players[index]) {
-    input.value = players[index].points;
-  }
+  if (!query) return players.slice(0, 30);
+  const lower = query.toLowerCase();
+  return players.filter(p => p.name.toLowerCase().includes(lower)).slice(0, 30);
 }
 
-function beregn() {
-  const className = document.getElementById("klasse").value;
-  const spiller = Number.parseInt(document.getElementById("spiller").value, 10);
-  const motstander = Number.parseInt(document.getElementById("motstander").value, 10);
-  const vekting = Number.parseFloat(document.getElementById("turnering").value);
-  const vant = document.getElementById("resultat").value === "vant";
-  const output = document.getElementById("output");
-
-  if (!Number.isInteger(spiller) || !Number.isInteger(motstander)) {
-    output.textContent = "Velg spillere fra listen eller skriv inn gyldige poeng.";
+function renderDropdown(dropdownEl, matches, onSelect) {
+  dropdownEl.innerHTML = "";
+  if (matches.length === 0) {
+    dropdownEl.classList.remove("open");
     return;
   }
 
-  const diff = Math.abs(spiller - motstander);
+  for (const player of matches) {
+    const div = document.createElement("div");
+    div.className = "search-item";
+    div.textContent = formatPlayer(player);
+    div.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+      onSelect(player);
+    });
+    dropdownEl.appendChild(div);
+  }
+  dropdownEl.classList.add("open");
+}
 
-  let uventet = false;
+function setupSearch(searchId, dropdownId, hiddenId, pointsId) {
+  const searchEl = document.getElementById(searchId);
+  const dropdownEl = document.getElementById(dropdownId);
+  const hiddenEl = document.getElementById(hiddenId);
+  const pointsEl = document.getElementById(pointsId);
+
+  function onSelect(player) {
+    searchEl.value = formatPlayer(player);
+    hiddenEl.value = player.points;
+    pointsEl.value = player.points;
+    dropdownEl.classList.remove("open");
+  }
+
+  searchEl.addEventListener("input", () => {
+    const className = document.getElementById("klasse").value;
+    const matches = filterPlayers(searchEl.value, className);
+    renderDropdown(dropdownEl, matches, onSelect);
+    hiddenEl.value = "";
+  });
+
+  searchEl.addEventListener("focus", () => {
+    const className = document.getElementById("klasse").value;
+    const matches = filterPlayers(searchEl.value, className);
+    renderDropdown(dropdownEl, matches, onSelect);
+  });
+
+  searchEl.addEventListener("blur", () => {
+    setTimeout(() => dropdownEl.classList.remove("open"), 150);
+  });
+}
+
+// --- Calculation ---
+
+function beregnUtfall(spiller, motstander, vant, vekting) {
+  const diff = Math.abs(spiller - motstander);
+  let uventet;
   if (vant) {
     uventet = spiller < motstander;
   } else {
     uventet = spiller > motstander;
   }
-
   const grunnendring = hentPoengEndring(diff, vant, uventet);
   const totalEndring = grunnendring * vekting;
   const nyRanking = spiller + totalEndring;
-
-  output.innerHTML = `
-    <strong>Poengdifferanse:</strong> ${diff}<br>
-    <strong>Resultat:</strong> ${uventet ? "Uventet" : "Forventet"}<br>
-    <strong>Grunnendring:</strong> ${grunnendring}<br>
-    <strong>Turneringsvekting:</strong> x${vekting}<br>
-    <strong>Total endring:</strong> ${totalEndring}<br>
-    <strong>Ny ranking:</strong> ${nyRanking}
-  `;
+  return { diff, uventet, grunnendring, totalEndring, nyRanking };
 }
 
+function beregn() {
+  const spiller = Number.parseInt(document.getElementById("spiller").value, 10);
+  const motstander = Number.parseInt(document.getElementById("motstander").value, 10);
+  const vekting = Number.parseFloat(document.getElementById("turnering").value);
+  const output = document.getElementById("output");
+
+  if (!Number.isInteger(spiller) || !Number.isInteger(motstander)) {
+    output.textContent = "Velg spillere fra listen eller skriv inn gyldige poeng.";
+    output.className = "result";
+    return;
+  }
+
+  if (spiller < 0 || spiller > 5000 || motstander < 0 || motstander > 5000) {
+    output.textContent = "Poeng må være mellom 0 og 5000.";
+    output.className = "result";
+    return;
+  }
+
+  const seier = beregnUtfall(spiller, motstander, true, vekting);
+  const tap = beregnUtfall(spiller, motstander, false, vekting);
+
+  const isPositive = seier.totalEndring > 0;
+
+  output.innerHTML = `
+    <div class="result-section">
+      <strong class="result-label result-label--positive">Ved seier${seier.uventet ? " (uventet)" : " (forventet)"}:</strong>
+      <span>Grunnendring: ${seier.grunnendring} · Vekting: x${vekting} · <strong>Total: ${seier.totalEndring > 0 ? "+" : ""}${seier.totalEndring}</strong> → ${seier.nyRanking}</span>
+    </div>
+    <div class="result-section">
+      <strong class="result-label result-label--negative">Ved tap${tap.uventet ? " (uventet)" : " (forventet)"}:</strong>
+      <span>Grunnendring: ${tap.grunnendring} · Vekting: x${vekting} · <strong>Total: ${tap.totalEndring}</strong> → ${tap.nyRanking}</span>
+    </div>
+    <div class="result-meta">Poengdifferanse: ${seier.diff}</div>
+  `;
+  output.className = "result result--filled";
+
+  // Add to history
+  const spillerNavn = document.getElementById("spillerSearch").value || `${spiller}p`;
+  const motstanderNavn = document.getElementById("motstanderSearch").value || `${motstander}p`;
+
+  history.unshift({
+    spiller: spillerNavn,
+    motstander: motstanderNavn,
+    seier: seier.totalEndring,
+    tap: tap.totalEndring
+  });
+  if (history.length > MAX_HISTORY) history.pop();
+  renderHistory();
+}
+
+function renderHistory() {
+  const el = document.getElementById("historikk");
+  if (history.length === 0) {
+    el.innerHTML = "";
+    return;
+  }
+
+  let html = '<h3>Siste beregninger</h3><ul class="history-list">';
+  for (const h of history) {
+    html += `<li>
+      <span class="history-players">${h.spiller} vs ${h.motstander}</span>
+      <span class="history-results">
+        <span class="tag tag--positive">S: ${h.seier > 0 ? "+" : ""}${h.seier}</span>
+        <span class="tag tag--negative">T: ${h.tap}</span>
+      </span>
+    </li>`;
+  }
+  html += "</ul>";
+  el.innerHTML = html;
+}
+
+// --- Init ---
+
 async function loadRanking() {
+  document.querySelector(".container").classList.add("loading");
   try {
     const response = await fetch(`ranking.json?ts=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
@@ -156,6 +240,8 @@ async function loadRanking() {
   } catch (error) {
     console.error(error);
     setStatus("Kunne ikke laste ranking.json. Du kan fortsatt skrive inn poeng manuelt.");
+  } finally {
+    document.querySelector(".container").classList.remove("loading");
   }
 }
 
@@ -166,14 +252,13 @@ document.addEventListener("DOMContentLoaded", () => {
     populatePlayers(e.target.value);
   });
 
-  document.getElementById("spillerSelect").addEventListener("change", () => {
-    const className = document.getElementById("klasse").value;
-    syncPointsFromSelect("spiller", "spillerSelect", className);
-  });
+  setupSearch("spillerSearch", "spillerDropdown", "spillerIndex", "spiller");
+  setupSearch("motstanderSearch", "motstanderDropdown", "motstanderIndex", "motstander");
 
-  document.getElementById("motstanderSelect").addEventListener("change", () => {
-    const className = document.getElementById("klasse").value;
-    syncPointsFromSelect("motstander", "motstanderSelect", className);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && e.target.tagName !== "SELECT") {
+      beregn();
+    }
   });
 
   loadRanking();
