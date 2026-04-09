@@ -155,6 +155,19 @@ function beregnUtfall(spiller, motstander, vant, vekting) {
   return { diff, uventet, grunnendring, totalEndring, nyRanking };
 }
 
+function getPlayerLabel(searchId, points) {
+  const search = document.getElementById(searchId).value;
+  if (search && search !== "") {
+    const nameOnly = search.replace(/\s*\(.*\)\s*$/, "").replace(/^\d+\.\s*/, "");
+    if (nameOnly) return nameOnly;
+  }
+  return `${points}p`;
+}
+
+function fmt(n) {
+  return (n > 0 ? "+" : "") + n;
+}
+
 function beregn() {
   const spiller = Number.parseInt(document.getElementById("spiller").value, 10);
   const motstander = Number.parseInt(document.getElementById("motstander").value, 10);
@@ -173,33 +186,54 @@ function beregn() {
     return;
   }
 
-  const seier = beregnUtfall(spiller, motstander, true, vekting);
-  const tap = beregnUtfall(spiller, motstander, false, vekting);
+  const spillerNavn = getPlayerLabel("spillerSearch", spiller);
+  const motstanderNavn = getPlayerLabel("motstanderSearch", motstander);
 
-  const isPositive = seier.totalEndring > 0;
+  // Spiller vinner
+  const sVinner = beregnUtfall(spiller, motstander, true, vekting);
+  // Motstander taper (speilbilde)
+  const mTaper = beregnUtfall(motstander, spiller, false, vekting);
+
+  // Motstander vinner
+  const mVinner = beregnUtfall(motstander, spiller, true, vekting);
+  // Spiller taper
+  const sTaper = beregnUtfall(spiller, motstander, false, vekting);
 
   output.innerHTML = `
-    <div class="result-section">
-      <strong class="result-label result-label--positive">Ved seier${seier.uventet ? " (uventet)" : " (forventet)"}:</strong>
-      <span>Grunnendring: ${seier.grunnendring} · Vekting: x${vekting} · <strong>Total: ${seier.totalEndring > 0 ? "+" : ""}${seier.totalEndring}</strong> → ${seier.nyRanking}</span>
+    <div class="result-meta" style="margin-top:0; margin-bottom:10px">
+      Differanse: ${sVinner.diff} · Vekting: x${vekting}
     </div>
-    <div class="result-section">
-      <strong class="result-label result-label--negative">Ved tap${tap.uventet ? " (uventet)" : " (forventet)"}:</strong>
-      <span>Grunnendring: ${tap.grunnendring} · Vekting: x${vekting} · <strong>Total: ${tap.totalEndring}</strong> → ${tap.nyRanking}</span>
-    </div>
-    <div class="result-meta">Poengdifferanse: ${seier.diff}</div>
+    <table class="result-table">
+      <thead>
+        <tr>
+          <th>Utfall</th>
+          <th>${spillerNavn}<br><span class="th-points">${spiller}p</span></th>
+          <th>${motstanderNavn}<br><span class="th-points">${motstander}p</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="outcome-label">${spillerNavn} vinner</td>
+          <td class="cell-positive">${fmt(sVinner.totalEndring)} → ${sVinner.nyRanking}</td>
+          <td class="cell-negative">${fmt(mTaper.totalEndring)} → ${mTaper.nyRanking}</td>
+        </tr>
+        <tr>
+          <td class="outcome-label">${motstanderNavn} vinner</td>
+          <td class="cell-negative">${fmt(sTaper.totalEndring)} → ${sTaper.nyRanking}</td>
+          <td class="cell-positive">${fmt(mVinner.totalEndring)} → ${mVinner.nyRanking}</td>
+        </tr>
+      </tbody>
+    </table>
   `;
   output.className = "result result--filled";
 
-  // Add to history
-  const spillerNavn = document.getElementById("spillerSearch").value || `${spiller}p`;
-  const motstanderNavn = document.getElementById("motstanderSearch").value || `${motstander}p`;
-
   history.unshift({
-    spiller: spillerNavn,
-    motstander: motstanderNavn,
-    seier: seier.totalEndring,
-    tap: tap.totalEndring
+    spiller: `${spillerNavn} (${spiller})`,
+    motstander: `${motstanderNavn} (${motstander})`,
+    sVinner: sVinner.totalEndring,
+    sTaper: sTaper.totalEndring,
+    mVinner: mVinner.totalEndring,
+    mTaper: mTaper.totalEndring
   });
   if (history.length > MAX_HISTORY) history.pop();
   renderHistory();
@@ -217,8 +251,8 @@ function renderHistory() {
     html += `<li>
       <span class="history-players">${h.spiller} vs ${h.motstander}</span>
       <span class="history-results">
-        <span class="tag tag--positive">S: ${h.seier > 0 ? "+" : ""}${h.seier}</span>
-        <span class="tag tag--negative">T: ${h.tap}</span>
+        <span class="tag tag--positive">${fmt(h.sVinner)}</span>
+        <span class="tag tag--negative">${fmt(h.sTaper)}</span>
       </span>
     </li>`;
   }

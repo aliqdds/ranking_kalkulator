@@ -137,30 +137,54 @@ button:active {
   border-left-color: var(--accent);
 }
 
-.result-section {
-  margin-bottom: 8px;
-}
-
-.result-section:last-of-type {
-  margin-bottom: 4px;
-}
-
-.result-label {
-  display: block;
-  margin-bottom: 2px;
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 14px;
 }
 
-.result-label--positive {
-  color: var(--positive);
+.result-table th,
+.result-table td {
+  padding: 8px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--divider);
 }
 
-.result-label--negative {
+.result-table th {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--border);
+}
+
+.result-table th .th-points {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.result-table .outcome-label {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.result-table .cell-positive {
+  color: var(--positive);
+  font-weight: 700;
+}
+
+.result-table .cell-negative {
   color: var(--negative);
+  font-weight: 700;
+}
+
+.result-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .result-meta {
-  margin-top: 8px;
   font-size: 13px;
   color: var(--text-muted);
 }
