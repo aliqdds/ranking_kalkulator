@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Støtt Ranking Kalkulator</title>
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      --bg-page: #f3f5f7;
+      --bg-card: #ffffff;
+      --text-primary: #1f2937;
+      --text-secondary: #4b5563;
+      --text-muted: #6b7280;
+      --border: #d1d5db;
+      --shadow: rgba(0, 0, 0, 0.08);
+      --vipps: #ff5b24;
+      --vipps-hover: #e04e1c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-page: #111827;
+        --bg-card: #1f2937;
+        --text-primary: #f9fafb;
+        --text-secondary: #d1d5db;
+        --text-muted: #9ca3af;
+        --border: #4b5563;
+        --shadow: rgba(0, 0, 0, 0.3);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: var(--bg-page);
+      color: var(--text-primary);
+      padding: 24px 12px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--bg-card);
+      border-radius: 14px;
+      padding: 32px 28px;
+      box-shadow: 0 10px 30px var(--shadow);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 22px;
+    }
+    .subtitle {
+      color: var(--text-secondary);
+      margin: 0 0 24px;
+      font-size: 15px;
+    }
+    .amount-section {
+      margin-bottom: 24px;
+    }
+    .amount-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .amount-buttons {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .amount-btn {
+      padding: 8px 18px;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .amount-btn:hover {
+      border-color: var(--vipps);
+    }
+    .amount-btn.active {
+      border-color: var(--vipps);
+      background: var(--vipps);
+      color: #fff;
+    }
+    .custom-amount {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .custom-amount input {
+      width: 100px;
+      padding: 8px 10px;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font-size: 15px;
+      text-align: center;
+      background: var(--bg-card);
+      color: var(--text-primary);
+    }
+    .custom-amount input:focus-visible {
+      outline: 2px solid var(--vipps);
+      outline-offset: 2px;
+    }
+    .custom-amount span {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .vipps-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 24px;
+      background: var(--vipps);
+      color: #fff;
+      font-size: 17px;
+      font-weight: 700;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .vipps-btn:hover { background: var(--vipps-hover); }
+    .vipps-btn:active { transform: scale(0.98); }
+    .fallback {
+      margin-top: 20px;
+      padding: 16px;
+      background: var(--bg-page);
+      border-radius: 10px;
+      display: none;
+    }
+    .fallback.show { display: block; }
+    .fallback p {
+      margin: 0 0 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .fallback .phone {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 1px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Støtt Ranking Kalkulator</h1>
+    <p class="subtitle">Liker du kalkulatoren? Send en liten støtte via Vipps.</p>
+
+    <div class="amount-section">
+      <div class="amount-label">Velg beløp</div>
+      <div class="amount-buttons">
+        <button class="amount-btn" data-amount="25">25 kr</button>
+        <button class="amount-btn" data-amount="50">50 kr</button>
+        <button class="amount-btn active" data-amount="100">100 kr</button>
+        <button class="amount-btn" data-amount="200">200 kr</button>
+      </div>
+      <div class="custom-amount">
+        <span>Annet:</span>
+        <input type="number" id="customAmount" min="1" max="10000" placeholder="..." />
+        <span>kr</span>
+      </div>
+    </div>
+
+    <button class="vipps-btn" id="vippsBtn">Åpne i Vipps</button>
+
+    <div class="fallback" id="fallback">
+      <p>Fikk du ikke åpnet Vipps? Søk opp nummeret manuelt i appen:</p>
+      <div class="phone">928 61 388</div>
+      <p style="margin-top:8px">Skriv "Bordtennis" som melding.</p>
+    </div>
+
+    <a href="index.html" class="back-link">Tilbake til kalkulatoren</a>
+  </div>
+
+  <script>
+    const PHONE = "92861388";
+    const MESSAGE = "Bordtennis";
+
+    let selectedAmount = 100;
+
+    document.querySelectorAll(".amount-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".amount-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedAmount = Number(btn.dataset.amount);
+        document.getElementById("customAmount").value = "";
+      });
+    });
+
+    document.getElementById("customAmount").addEventListener("input", (e) => {
+      const val = Number(e.target.value);
+      if (val > 0) {
+        selectedAmount = val;
+        document.querySelectorAll(".amount-btn").forEach(b => b.classList.remove("active"));
+      }
+    });
+
+    document.getElementById("vippsBtn").addEventListener("click", () => {
+      const amountOere = selectedAmount * 100;
+      const deeplink = `vipps:///send?number=${PHONE}&amount=${amountOere}&message=${encodeURIComponent(MESSAGE)}`;
+
+      window.location.href = deeplink;
+
+      // Vis fallback etter kort ventetid (deeplink åpnet ikke)
+      setTimeout(() => {
+        document.getElementById("fallback").classList.add("show");
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
