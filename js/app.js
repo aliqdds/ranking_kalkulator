@@ -38,44 +38,60 @@ function setStatus(text) {
   document.getElementById("status").textContent = text;
 }
 
-function populateClasses() {
-  const klasseEl = document.getElementById("klasse");
-  klasseEl.innerHTML = "";
+// --- Classes with non-empty player lists ---
 
-  const names = Object.keys(rankingData.classes || {});
+function getAvailableClasses() {
+  return Object.entries(rankingData.classes || {})
+    .filter(([, players]) => players.length > 0)
+    .map(([name]) => name);
+}
+
+function populateClassSelect(selectId, onChange) {
+  const el = document.getElementById(selectId);
+  el.innerHTML = "";
+
+  const names = getAvailableClasses();
   if (names.length === 0) {
     const opt = document.createElement("option");
     opt.value = "";
     opt.textContent = "Ingen rankingdata lastet";
-    klasseEl.appendChild(opt);
+    el.appendChild(opt);
     return;
   }
 
   for (const name of names) {
     const opt = document.createElement("option");
     opt.value = name;
-    opt.textContent = name;
-    klasseEl.appendChild(opt);
+    opt.textContent = `${name} (${rankingData.classes[name].length})`;
+    el.appendChild(opt);
   }
 
-  klasseEl.value = names[0];
-  populatePlayers(names[0]);
+  el.value = names[0];
+  el.addEventListener("change", () => onChange(el.value));
 }
 
-function populatePlayers(className) {
-  const players = rankingData.classes[className] || [];
+function clearPlayerFields(searchId, hiddenId, pointsId) {
+  document.getElementById(searchId).value = "";
+  document.getElementById(hiddenId).value = "";
+  document.getElementById(pointsId).value = "";
+}
 
-  document.getElementById("spillerSearch").value = "";
-  document.getElementById("motstanderSearch").value = "";
-  document.getElementById("spillerIndex").value = "";
-  document.getElementById("motstanderIndex").value = "";
-  document.getElementById("spiller").value = "";
-  document.getElementById("motstander").value = "";
+function populateClasses() {
+  const names = getAvailableClasses();
 
+  populateClassSelect("spillerKlasse", () => {
+    clearPlayerFields("spillerSearch", "spillerIndex", "spiller");
+  });
+
+  populateClassSelect("motstanderKlasse", () => {
+    clearPlayerFields("motstanderSearch", "motstanderIndex", "motstander");
+  });
+
+  const total = names.reduce((sum, n) => sum + rankingData.classes[n].length, 0);
   if (rankingData.updated_at) {
-    setStatus(`Oppdatert: ${rankingData.updated_at} · spillere lastet: ${players.length}`);
+    setStatus(`Oppdatert: ${rankingData.updated_at} · ${total} spillere i ${names.length} klasser`);
   } else {
-    setStatus(`Spillere lastet: ${players.length}`);
+    setStatus(`${total} spillere lastet i ${names.length} klasser`);
   }
 }
 
@@ -108,11 +124,15 @@ function renderDropdown(dropdownEl, matches, onSelect) {
   dropdownEl.classList.add("open");
 }
 
-function setupSearch(searchId, dropdownId, hiddenId, pointsId) {
+function setupSearch(searchId, dropdownId, hiddenId, pointsId, klasseId) {
   const searchEl = document.getElementById(searchId);
   const dropdownEl = document.getElementById(dropdownId);
   const hiddenEl = document.getElementById(hiddenId);
   const pointsEl = document.getElementById(pointsId);
+
+  function getClassName() {
+    return document.getElementById(klasseId).value;
+  }
 
   function onSelect(player) {
     searchEl.value = formatPlayer(player);
@@ -122,15 +142,13 @@ function setupSearch(searchId, dropdownId, hiddenId, pointsId) {
   }
 
   searchEl.addEventListener("input", () => {
-    const className = document.getElementById("klasse").value;
-    const matches = filterPlayers(searchEl.value, className);
+    const matches = filterPlayers(searchEl.value, getClassName());
     renderDropdown(dropdownEl, matches, onSelect);
     hiddenEl.value = "";
   });
 
   searchEl.addEventListener("focus", () => {
-    const className = document.getElementById("klasse").value;
-    const matches = filterPlayers(searchEl.value, className);
+    const matches = filterPlayers(searchEl.value, getClassName());
     renderDropdown(dropdownEl, matches, onSelect);
   });
 
@@ -189,14 +207,9 @@ function beregn() {
   const spillerNavn = getPlayerLabel("spillerSearch", spiller);
   const motstanderNavn = getPlayerLabel("motstanderSearch", motstander);
 
-  // Spiller vinner
   const sVinner = beregnUtfall(spiller, motstander, true, vekting);
-  // Motstander taper (speilbilde)
   const mTaper = beregnUtfall(motstander, spiller, false, vekting);
-
-  // Motstander vinner
   const mVinner = beregnUtfall(motstander, spiller, true, vekting);
-  // Spiller taper
   const sTaper = beregnUtfall(spiller, motstander, false, vekting);
 
   output.innerHTML = `
@@ -282,12 +295,8 @@ async function loadRanking() {
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("beregnBtn").addEventListener("click", beregn);
 
-  document.getElementById("klasse").addEventListener("change", (e) => {
-    populatePlayers(e.target.value);
-  });
-
-  setupSearch("spillerSearch", "spillerDropdown", "spillerIndex", "spiller");
-  setupSearch("motstanderSearch", "motstanderDropdown", "motstanderIndex", "motstander");
+  setupSearch("spillerSearch", "spillerDropdown", "spillerIndex", "spiller", "spillerKlasse");
+  setupSearch("motstanderSearch", "motstanderDropdown", "motstanderIndex", "motstander", "motstanderKlasse");
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && e.target.tagName !== "SELECT") {

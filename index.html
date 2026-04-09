@@ -15,15 +15,16 @@
       Uoffisiell kalkulator basert på offentlig tilgjengelige rankingregler.
     </p>
 
-    <label for="klasse">Rankingklasse</label>
-    <select id="klasse"></select>
     <div id="status" class="hint">Laster ranking…</div>
 
     <hr />
 
     <div class="grid">
       <div class="grid-col">
-        <label for="spillerSearch">Spiller</label>
+        <label for="spillerKlasse">Spiller — Klasse</label>
+        <select id="spillerKlasse"></select>
+
+        <label for="spillerSearch">Søk spiller</label>
         <div class="search-wrapper">
           <input type="text" id="spillerSearch" autocomplete="off" placeholder="Søk spiller..." />
           <div class="search-dropdown" id="spillerDropdown"></div>
@@ -35,7 +36,10 @@
       </div>
 
       <div class="grid-col">
-        <label for="motstanderSearch">Motstander</label>
+        <label for="motstanderKlasse">Motstander — Klasse</label>
+        <select id="motstanderKlasse"></select>
+
+        <label for="motstanderSearch">Søk motstander</label>
         <div class="search-wrapper">
           <input type="text" id="motstanderSearch" autocomplete="off" placeholder="Søk motstander..." />
           <div class="search-dropdown" id="motstanderDropdown"></div>
@@ -62,9 +66,14 @@
 
     <section id="historikk"></section>
 
-    <p class="footer">
-      Ikke tilknyttet NBTF. Kontroller alltid offisiell ranking og reglement hos NBTF. NBTF opplyser at OnlineRanking normalt publiseres den 1. i hver måned.
-    </p>
+    <footer class="site-footer">
+      <p class="footer">
+        Ikke tilknyttet NBTF. Kontroller alltid offisiell ranking og reglement hos NBTF. NBTF opplyser at OnlineRanking normalt publiseres den 1. i hver måned.
+      </p>
+      <hr />
+      <p class="credit">Laget av Ali Hassan Qureshi</p>
+      <a href="#VIPPS_LENKE" target="_blank" rel="noopener" class="vipps-btn">Støtt via Vipps</a>
+    </footer>
   </main>
 
   <script src="js/app.js"></script>

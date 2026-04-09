@@ -330,7 +330,39 @@ button:active {
 }
 
 .footer {
-  margin-top: 18px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.site-footer {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.credit {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.vipps-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #ff5b24;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.vipps-btn:hover {
+  background: #e04e1c;
+}
+
+.vipps-btn:active {
+  transform: scale(0.98);
 }
 
 hr {
