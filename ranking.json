@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-18 04:40 UTC",
+  "updated_at": "2026-04-19 05:10 UTC",
   "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
   "classes": {
     "Herrer Elite": [
@@ -425,12 +425,12 @@
       },
       {
         "rank": 85,
-        "name": "Stig Kim Nicklas Gustafsson",
+        "name": "Eivind Onsum",
         "points": 2215
       },
       {
         "rank": 85,
-        "name": "Eivind Onsum",
+        "name": "Stig Kim Nicklas Gustafsson",
         "points": 2215
       },
       {
@@ -565,12 +565,12 @@
       },
       {
         "rank": 113,
-        "name": "David Juhasz",
+        "name": "Henning-Andre Finstad",
         "points": 2116
       },
       {
         "rank": 113,
-        "name": "Henning-Andre Finstad",
+        "name": "David Juhasz",
         "points": 2116
       },
       {
@@ -945,12 +945,12 @@
       },
       {
         "rank": 189,
-        "name": "Terje Fossheim",
+        "name": "Anton Topias Tehrani",
         "points": 1924
       },
       {
         "rank": 189,
-        "name": "Anton Topias Tehrani",
+        "name": "Terje Fossheim",
         "points": 1924
       },
       {
@@ -990,268 +990,268 @@
       },
       {
         "rank": 198,
+        "name": "Daniel Halsteinli",
+        "points": 1910
+      },
+      {
+        "rank": 199,
         "name": "Noah Götestam",
         "points": 1908
       },
       {
-        "rank": 199,
+        "rank": 200,
         "name": "Andreas Reite",
         "points": 1906
       },
       {
-        "rank": 200,
-        "name": "Patrick Flø Fjeldstad",
-        "points": 1904
-      },
-      {
-        "rank": 200,
+        "rank": 201,
         "name": "Didrik F. Johansen",
         "points": 1904
       },
       {
-        "rank": 202,
-        "name": "Aleksey Yefremov",
-        "points": 1900
+        "rank": 201,
+        "name": "Patrick Flø Fjeldstad",
+        "points": 1904
       },
       {
-        "rank": 202,
+        "rank": 203,
         "name": "Øystein Strand",
         "points": 1900
       },
       {
-        "rank": 204,
+        "rank": 203,
+        "name": "Aleksey Yefremov",
+        "points": 1900
+      },
+      {
+        "rank": 205,
         "name": "Mithun Murthy",
         "points": 1896
       },
       {
-        "rank": 205,
+        "rank": 206,
         "name": "Kjetil Korneliussen",
         "points": 1892
       },
       {
-        "rank": 206,
+        "rank": 207,
         "name": "Jan Petter Hansen",
         "points": 1892
       },
       {
-        "rank": 206,
+        "rank": 207,
         "name": "Knut Helseth",
         "points": 1892
       },
       {
-        "rank": 208,
+        "rank": 209,
         "name": "Liam Matheo Jensen",
         "points": 1887
       },
       {
-        "rank": 209,
+        "rank": 210,
         "name": "Roshman James Rajkumar",
         "points": 1886
       },
       {
-        "rank": 210,
+        "rank": 211,
         "name": "Adam Kornizki",
         "points": 1880
       },
       {
-        "rank": 211,
+        "rank": 212,
         "name": "Besnik Kastrati",
         "points": 1880
       },
       {
-        "rank": 212,
+        "rank": 213,
         "name": "Christoph Köpers",
         "points": 1878
       },
       {
-        "rank": 213,
+        "rank": 214,
         "name": "Erik Berge Saue",
         "points": 1878
       },
       {
-        "rank": 214,
+        "rank": 215,
         "name": "Aditya Kale",
         "points": 1875
       },
       {
-        "rank": 215,
+        "rank": 216,
         "name": "Christopher Flaatten",
         "points": 1874
       },
       {
-        "rank": 216,
+        "rank": 217,
         "name": "Kajus Zavisa",
         "points": 1871
       },
       {
-        "rank": 217,
+        "rank": 218,
         "name": "Isak Johansen Kristiansen",
         "points": 1870
       },
       {
-        "rank": 218,
+        "rank": 219,
         "name": "Kai Magnus Groth",
         "points": 1870
       },
       {
-        "rank": 219,
+        "rank": 220,
         "name": "Valdas Vabolis",
         "points": 1868
       },
       {
-        "rank": 220,
+        "rank": 221,
         "name": "Vegard Sunde Lorentzen",
         "points": 1862
       },
       {
-        "rank": 221,
+        "rank": 222,
         "name": "Samuel Falch-Krokå",
         "points": 1861
       },
       {
-        "rank": 222,
+        "rank": 223,
         "name": "Karol Laskiewicz",
         "points": 1860
       },
       {
-        "rank": 223,
+        "rank": 224,
         "name": "Nicholai Forsland Zabka",
         "points": 1852
       },
       {
-        "rank": 224,
+        "rank": 225,
         "name": "Gisle Haugen",
         "points": 1850
       },
       {
-        "rank": 224,
+        "rank": 225,
         "name": "Nikolai Hagen",
         "points": 1850
       },
       {
-        "rank": 226,
+        "rank": 227,
         "name": "Ole Sætra Tønnevold",
         "points": 1850
       },
       {
-        "rank": 226,
+        "rank": 227,
         "name": "Olav Benham Olsen",
         "points": 1850
       },
       {
-        "rank": 228,
+        "rank": 229,
         "name": "Rune Wågelsby",
         "points": 1846
       },
       {
-        "rank": 229,
+        "rank": 230,
         "name": "Per Erik Amundsen",
         "points": 1843
       },
       {
-        "rank": 230,
+        "rank": 231,
         "name": "Navin Selvanathan",
         "points": 1841
       },
       {
-        "rank": 231,
+        "rank": 232,
         "name": "Trond Aukland",
         "points": 1838
       },
       {
-        "rank": 232,
+        "rank": 233,
         "name": "Tom Strømberg",
         "points": 1836
       },
       {
-        "rank": 233,
+        "rank": 234,
         "name": "Jay Impuesto",
         "points": 1835
       },
       {
-        "rank": 234,
+        "rank": 235,
         "name": "Benjamin Cai",
         "points": 1834
       },
       {
-        "rank": 234,
+        "rank": 235,
         "name": "Wang Xi",
         "points": 1834
       },
       {
-        "rank": 236,
+        "rank": 237,
         "name": "Axel Askjer",
         "points": 1833
       },
       {
-        "rank": 237,
+        "rank": 238,
         "name": "Johannes Tomasson",
         "points": 1832
       },
       {
-        "rank": 238,
+        "rank": 239,
         "name": "Eric Nilsen",
         "points": 1829
       },
       {
-        "rank": 239,
+        "rank": 240,
         "name": "Pedja Momcilovic",
         "points": 1828
       },
       {
-        "rank": 240,
+        "rank": 241,
         "name": "Endre Skolt",
         "points": 1823
       },
       {
-        "rank": 241,
+        "rank": 242,
         "name": "Pooya Shameli",
         "points": 1822
       },
       {
-        "rank": 242,
+        "rank": 243,
         "name": "Matteo Scalabre",
         "points": 1816
       },
       {
-        "rank": 243,
+        "rank": 244,
         "name": "Johan Garman Grude",
         "points": 1816
       },
       {
-        "rank": 244,
+        "rank": 245,
         "name": "Martin Tran",
         "points": 1815
       },
       {
-        "rank": 245,
+        "rank": 246,
         "name": "Kjell Bråten",
         "points": 1812
       },
       {
-        "rank": 246,
+        "rank": 247,
         "name": "Inge Brunsvik",
         "points": 1808
       },
       {
-        "rank": 246,
+        "rank": 247,
         "name": "Stian Johansen",
         "points": 1808
       },
       {
-        "rank": 248,
+        "rank": 249,
         "name": "Kristian Hoel",
         "points": 1806
       },
       {
-        "rank": 249,
+        "rank": 250,
         "name": "Milian Kristoffer Sønju Fjæraa",
         "points": 1806
-      },
-      {
-        "rank": 250,
-        "name": "Joshua Juul Watt",
-        "points": 1802
       }
     ],
     "Damer Elite": [
