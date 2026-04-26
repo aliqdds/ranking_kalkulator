@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25 04:44 UTC",
+  "updated_at": "2026-04-26 05:20 UTC",
   "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
   "classes": {
     "Herrer Elite": [
@@ -565,12 +565,12 @@
       },
       {
         "rank": 113,
-        "name": "David Juhasz",
+        "name": "Henning-Andre Finstad",
         "points": 2116
       },
       {
         "rank": 113,
-        "name": "Henning-Andre Finstad",
+        "name": "David Juhasz",
         "points": 2116
       },
       {
@@ -580,12 +580,12 @@
       },
       {
         "rank": 116,
-        "name": "Lars Erik Espedalen",
+        "name": "Oscar Søndberg",
         "points": 2107
       },
       {
         "rank": 116,
-        "name": "Oscar Søndberg",
+        "name": "Lars Erik Espedalen",
         "points": 2107
       },
       {
@@ -600,12 +600,12 @@
       },
       {
         "rank": 120,
-        "name": "Konrad Kaminski",
+        "name": "Khoa Nam Nguyen",
         "points": 2100
       },
       {
         "rank": 120,
-        "name": "Khoa Nam Nguyen",
+        "name": "Konrad Kaminski",
         "points": 2100
       },
       {
@@ -760,12 +760,12 @@
       },
       {
         "rank": 152,
-        "name": "Tobias Torheim Johansson",
+        "name": "Sten Eigil Sigurdsen",
         "points": 2010
       },
       {
         "rank": 152,
-        "name": "Sten Eigil Sigurdsen",
+        "name": "Tobias Torheim Johansson",
         "points": 2010
       },
       {
@@ -900,12 +900,12 @@
       },
       {
         "rank": 180,
-        "name": "Thomas Sætre",
+        "name": "Tohid Ghanbarpour",
         "points": 1935
       },
       {
         "rank": 180,
-        "name": "Tohid Ghanbarpour",
+        "name": "Thomas Sætre",
         "points": 1935
       },
       {
@@ -960,12 +960,12 @@
       },
       {
         "rank": 192,
-        "name": "Per Bohman",
+        "name": "Anders Engh",
         "points": 1920
       },
       {
         "rank": 192,
-        "name": "Anders Engh",
+        "name": "Per Bohman",
         "points": 1920
       },
       {
@@ -1035,12 +1035,12 @@
       },
       {
         "rank": 207,
-        "name": "Jan Petter Hansen",
+        "name": "Knut Helseth",
         "points": 1892
       },
       {
         "rank": 207,
-        "name": "Knut Helseth",
+        "name": "Jan Petter Hansen",
         "points": 1892
       },
       {
@@ -1175,12 +1175,12 @@
       },
       {
         "rank": 235,
-        "name": "Benjamin Cai",
+        "name": "Wang Xi",
         "points": 1834
       },
       {
         "rank": 235,
-        "name": "Wang Xi",
+        "name": "Benjamin Cai",
         "points": 1834
       },
       {
@@ -1657,12 +1657,12 @@
       },
       {
         "rank": 81,
-        "name": "Bo Jian",
+        "name": "Astrid Larsen",
         "points": 1108
       },
       {
         "rank": 81,
-        "name": "Astrid Larsen",
+        "name": "Bo Jian",
         "points": 1108
       },
       {
@@ -1887,27 +1887,7 @@
       },
       {
         "rank": 127,
-        "name": "Selin Mansour",
-        "points": 900
-      },
-      {
-        "rank": 127,
-        "name": "Olga Kovalenko",
-        "points": 900
-      },
-      {
-        "rank": 127,
-        "name": "Elisabeth Nesheim Bjorøy",
-        "points": 900
-      },
-      {
-        "rank": 127,
-        "name": "Jennifer Asplund",
-        "points": 900
-      },
-      {
-        "rank": 127,
-        "name": "Anne Marie Røvig Bakke",
+        "name": "Nathaniel Spira",
         "points": 900
       },
       {
@@ -1917,22 +1897,42 @@
       },
       {
         "rank": 127,
+        "name": "Emma Källerö",
+        "points": 900
+      },
+      {
+        "rank": 127,
+        "name": "Jennifer Asplund",
+        "points": 900
+      },
+      {
+        "rank": 127,
+        "name": "Elisabeth Nesheim Bjorøy",
+        "points": 900
+      },
+      {
+        "rank": 127,
+        "name": "Olga Kovalenko",
+        "points": 900
+      },
+      {
+        "rank": 127,
+        "name": "Selin Mansour",
+        "points": 900
+      },
+      {
+        "rank": 127,
         "name": "Sølvi Humblen",
         "points": 900
       },
       {
         "rank": 127,
-        "name": "Nathaniel Spira",
+        "name": "Anne Marie Røvig Bakke",
         "points": 900
       },
       {
         "rank": 127,
         "name": "Frida Chu Phan",
-        "points": 900
-      },
-      {
-        "rank": 127,
-        "name": "Emma Källerö",
         "points": 900
       },
       {
@@ -1977,12 +1977,12 @@
       },
       {
         "rank": 145,
-        "name": "Iselinn Stuve",
+        "name": "Sissel Leffmann",
         "points": 872
       },
       {
         "rank": 145,
-        "name": "Sissel Leffmann",
+        "name": "Iselinn Stuve",
         "points": 872
       },
       {
@@ -2002,12 +2002,12 @@
       },
       {
         "rank": 150,
-        "name": "Silje Lien Aasheim",
+        "name": "Helena Åsland Sivertsen",
         "points": 865
       },
       {
         "rank": 150,
-        "name": "Helena Åsland Sivertsen",
+        "name": "Silje Lien Aasheim",
         "points": 865
       },
       {
@@ -2474,23 +2474,23 @@
       },
       {
         "rank": 73,
+        "name": "Agaton Østhagen",
+        "points": 1656
+      },
+      {
+        "rank": 74,
         "name": "Aleksander Magnar Vavik",
         "points": 1652
       },
       {
-        "rank": 74,
+        "rank": 75,
         "name": "Erik Wike Ljungblad",
         "points": 1650
       },
       {
-        "rank": 75,
+        "rank": 76,
         "name": "Theodor Jantsch",
         "points": 1643
-      },
-      {
-        "rank": 76,
-        "name": "Agaton Østhagen",
-        "points": 1638
       },
       {
         "rank": 77,
@@ -2649,7 +2649,7 @@
       },
       {
         "rank": 108,
-        "name": "Aarash Godbole",
+        "name": "Platon Kilmov",
         "points": 1472
       },
       {
@@ -2659,7 +2659,7 @@
       },
       {
         "rank": 108,
-        "name": "Platon Kilmov",
+        "name": "Aarash Godbole",
         "points": 1472
       },
       {
@@ -2934,12 +2934,12 @@
       },
       {
         "rank": 165,
-        "name": "Johannes Rognum Rike",
+        "name": "Mohammadi Mahyar Shah",
         "points": 1223
       },
       {
         "rank": 165,
-        "name": "Mohammadi Mahyar Shah",
+        "name": "Johannes Rognum Rike",
         "points": 1223
       },
       {
@@ -3004,12 +3004,12 @@
       },
       {
         "rank": 179,
-        "name": "Kristian Danielsen",
+        "name": "Danusan Radha",
         "points": 1169
       },
       {
         "rank": 179,
-        "name": "Danusan Radha",
+        "name": "Kristian Danielsen",
         "points": 1169
       },
       {
@@ -3099,17 +3099,17 @@
       },
       {
         "rank": 198,
+        "name": "Sondre Ryan",
+        "points": 1134
+      },
+      {
+        "rank": 198,
         "name": "David Evensen",
         "points": 1134
       },
       {
         "rank": 198,
         "name": "Julian Bru",
-        "points": 1134
-      },
-      {
-        "rank": 198,
-        "name": "Sondre Ryan",
         "points": 1134
       },
       {
@@ -3214,12 +3214,12 @@
       },
       {
         "rank": 221,
-        "name": "Mathias Grøstad Brekko",
+        "name": "Vincent Olsen",
         "points": 1085
       },
       {
         "rank": 221,
-        "name": "Vincent Olsen",
+        "name": "Mathias Grøstad Brekko",
         "points": 1085
       },
       {
@@ -3234,12 +3234,12 @@
       },
       {
         "rank": 225,
-        "name": "Brage Andersen Viberg",
+        "name": "Andreas Offengård",
         "points": 1076
       },
       {
         "rank": 225,
-        "name": "Andreas Offengård",
+        "name": "Brage Andersen Viberg",
         "points": 1076
       },
       {
@@ -3284,12 +3284,12 @@
       },
       {
         "rank": 235,
-        "name": "Oleander Tangen",
+        "name": "Mats Hatlemark",
         "points": 1054
       },
       {
         "rank": 235,
-        "name": "Mats Hatlemark",
+        "name": "Oleander Tangen",
         "points": 1054
       },
       {
@@ -3309,17 +3309,17 @@
       },
       {
         "rank": 240,
+        "name": "Kjell Eohann Miguel",
+        "points": 1050
+      },
+      {
+        "rank": 240,
         "name": "Emil Hagen",
         "points": 1050
       },
       {
         "rank": 240,
         "name": "Filip Træthaug Matre",
-        "points": 1050
-      },
-      {
-        "rank": 240,
-        "name": "Kjell Eohann Miguel",
         "points": 1050
       },
       {
@@ -3349,12 +3349,12 @@
       },
       {
         "rank": 248,
-        "name": "Gabriel Lundevall",
+        "name": "Aron Mosta",
         "points": 1043
       },
       {
         "rank": 248,
-        "name": "Aron Mosta",
+        "name": "Gabriel Lundevall",
         "points": 1043
       },
       {
@@ -3729,7 +3729,7 @@
       {
         "rank": 30,
         "name": "Agaton Østhagen",
-        "points": 1638
+        "points": 1656
       },
       {
         "rank": 31,
@@ -3818,12 +3818,12 @@
       },
       {
         "rank": 48,
-        "name": "Platon Kilmov",
+        "name": "Aarash Godbole",
         "points": 1472
       },
       {
         "rank": 48,
-        "name": "Aarash Godbole",
+        "name": "Platon Kilmov",
         "points": 1472
       },
       {
@@ -4078,12 +4078,12 @@
       },
       {
         "rank": 100,
-        "name": "Julian Bru",
+        "name": "David Evensen",
         "points": 1134
       },
       {
         "rank": 100,
-        "name": "David Evensen",
+        "name": "Julian Bru",
         "points": 1134
       },
       {
@@ -4213,7 +4213,7 @@
       },
       {
         "rank": 127,
-        "name": "Samuel Andre Mondonedo",
+        "name": "Filip Træthaug Matre",
         "points": 1050
       },
       {
@@ -4223,12 +4223,12 @@
       },
       {
         "rank": 127,
-        "name": "Emil Hagen",
+        "name": "Samuel Andre Mondonedo",
         "points": 1050
       },
       {
         "rank": 127,
-        "name": "Filip Træthaug Matre",
+        "name": "Emil Hagen",
         "points": 1050
       },
       {
@@ -4288,12 +4288,12 @@
       },
       {
         "rank": 141,
-        "name": "Andreas Kinn Hanstensen",
+        "name": "Kristian Myhre",
         "points": 1020
       },
       {
         "rank": 141,
-        "name": "Kristian Myhre",
+        "name": "Andreas Kinn Hanstensen",
         "points": 1020
       },
       {
@@ -4393,12 +4393,12 @@
       },
       {
         "rank": 163,
-        "name": "Samuel Bennett Olsen",
+        "name": "Mio Alexander Berntsen",
         "points": 987
       },
       {
         "rank": 163,
-        "name": "Mio Alexander Berntsen",
+        "name": "Samuel Bennett Olsen",
         "points": 987
       },
       {
@@ -4458,7 +4458,7 @@
       },
       {
         "rank": 176,
-        "name": "Oscar Holm Andreassen",
+        "name": "Levi Matheo Ballestad",
         "points": 974
       },
       {
@@ -4468,12 +4468,12 @@
       },
       {
         "rank": 176,
-        "name": "Jepp Solberg Monn-Iversen",
+        "name": "Oscar Holm Andreassen",
         "points": 974
       },
       {
         "rank": 176,
-        "name": "Levi Matheo Ballestad",
+        "name": "Jepp Solberg Monn-Iversen",
         "points": 974
       },
       {
@@ -4488,22 +4488,22 @@
       },
       {
         "rank": 182,
-        "name": "Jon Randby Rojak",
-        "points": 968
-      },
-      {
-        "rank": 182,
         "name": "Sigurdur Adalsteinsson",
         "points": 968
       },
       {
-        "rank": 184,
-        "name": "Mads Timian Lie-Karlsen",
-        "points": 966
+        "rank": 182,
+        "name": "Jon Randby Rojak",
+        "points": 968
       },
       {
         "rank": 184,
         "name": "Pelle Håvardsholm Østensvik",
+        "points": 966
+      },
+      {
+        "rank": 184,
+        "name": "Mads Timian Lie-Karlsen",
         "points": 966
       },
       {
@@ -4533,12 +4533,12 @@
       },
       {
         "rank": 191,
-        "name": "Magnus Røger",
+        "name": "Alexander Rosnes Jakobsen",
         "points": 962
       },
       {
         "rank": 191,
-        "name": "Alexander Rosnes Jakobsen",
+        "name": "Magnus Røger",
         "points": 962
       },
       {
@@ -4548,12 +4548,12 @@
       },
       {
         "rank": 194,
-        "name": "Oscar Solheim Birkeland",
+        "name": "Theo Wingård Dall",
         "points": 959
       },
       {
         "rank": 194,
-        "name": "Theo Wingård Dall",
+        "name": "Oscar Solheim Birkeland",
         "points": 959
       },
       {
@@ -4578,7 +4578,7 @@
       },
       {
         "rank": 200,
-        "name": "Oliver Bronken",
+        "name": "Ulrik Thomas Engelhart",
         "points": 951
       },
       {
@@ -4588,17 +4588,17 @@
       },
       {
         "rank": 200,
-        "name": "Ulrik Thomas Engelhart",
+        "name": "Oliver Bronken",
         "points": 951
       },
       {
         "rank": 203,
-        "name": "Noah Gabler-Freding",
+        "name": "Hemanathan Deekshith",
         "points": 950
       },
       {
         "rank": 203,
-        "name": "Hemanathan Deekshith",
+        "name": "Noah Gabler-Freding",
         "points": 950
       },
       {
@@ -4613,11 +4613,6 @@
       },
       {
         "rank": 207,
-        "name": "Arvin Graff",
-        "points": 947
-      },
-      {
-        "rank": 207,
         "name": "Sander Olsen Grinna",
         "points": 947
       },
@@ -4627,13 +4622,13 @@
         "points": 947
       },
       {
-        "rank": 210,
-        "name": "Ola Raabe",
-        "points": 946
+        "rank": 207,
+        "name": "Arvin Graff",
+        "points": 947
       },
       {
-        "rank": 211,
-        "name": "Henry Jenssen",
+        "rank": 210,
+        "name": "Ola Raabe",
         "points": 946
       },
       {
@@ -4647,6 +4642,16 @@
         "points": 946
       },
       {
+        "rank": 211,
+        "name": "Henry Jenssen",
+        "points": 946
+      },
+      {
+        "rank": 214,
+        "name": "Leo Lillebjørn Huhta Edvartsen",
+        "points": 945
+      },
+      {
         "rank": 214,
         "name": "Nils Brænden Sand",
         "points": 945
@@ -4654,11 +4659,6 @@
       {
         "rank": 214,
         "name": "Samuel Urdal",
-        "points": 945
-      },
-      {
-        "rank": 214,
-        "name": "Leo Lillebjørn Huhta Edvartsen",
         "points": 945
       },
       {
@@ -4673,12 +4673,12 @@
       },
       {
         "rank": 218,
-        "name": "Kristian Tønnesen Tunås",
+        "name": "August Reynert Marfjord",
         "points": 943
       },
       {
         "rank": 218,
-        "name": "August Reynert Marfjord",
+        "name": "Kristian Tønnesen Tunås",
         "points": 943
       },
       {
@@ -4688,12 +4688,12 @@
       },
       {
         "rank": 222,
-        "name": "Filip Fernandez",
+        "name": "Anton Ovedal",
         "points": 942
       },
       {
         "rank": 222,
-        "name": "Anton Ovedal",
+        "name": "Filip Fernandez",
         "points": 942
       },
       {
@@ -4718,22 +4718,22 @@
       },
       {
         "rank": 228,
-        "name": "Birk Eivind Steinsvik",
-        "points": 937
-      },
-      {
-        "rank": 228,
         "name": "Tobias Franklin Steimler",
         "points": 937
       },
       {
-        "rank": 230,
-        "name": "Max Tveit",
-        "points": 936
+        "rank": 228,
+        "name": "Birk Eivind Steinsvik",
+        "points": 937
       },
       {
         "rank": 230,
         "name": "Yashraaj Shinganmakki",
+        "points": 936
+      },
+      {
+        "rank": 230,
+        "name": "Max Tveit",
         "points": 936
       },
       {
@@ -4763,12 +4763,12 @@
       },
       {
         "rank": 237,
-        "name": "Mathias Harboe",
+        "name": "David Karstad",
         "points": 929
       },
       {
         "rank": 237,
-        "name": "David Karstad",
+        "name": "Mathias Harboe",
         "points": 929
       },
       {
@@ -4788,12 +4788,12 @@
       },
       {
         "rank": 242,
-        "name": "Kristian Røger",
+        "name": "Snorre Korsbøen",
         "points": 927
       },
       {
         "rank": 242,
-        "name": "Snorre Korsbøen",
+        "name": "Kristian Røger",
         "points": 927
       },
       {
@@ -4808,22 +4808,22 @@
       },
       {
         "rank": 246,
-        "name": "Felix Næss",
-        "points": 925
-      },
-      {
-        "rank": 246,
         "name": "David Seyum",
         "points": 925
       },
       {
-        "rank": 248,
-        "name": "Sigurd Olaussen",
-        "points": 924
+        "rank": 246,
+        "name": "Felix Næss",
+        "points": 925
       },
       {
         "rank": 248,
         "name": "Sigurd Emsell Larsen",
+        "points": 924
+      },
+      {
+        "rank": 248,
+        "name": "Sigurd Olaussen",
         "points": 924
       },
       {
@@ -5088,7 +5088,7 @@
       {
         "rank": 13,
         "name": "Agaton Østhagen",
-        "points": 1638
+        "points": 1656
       },
       {
         "rank": 14,
@@ -5332,12 +5332,12 @@
       },
       {
         "rank": 62,
-        "name": "Sebastian Nguyen Helvik",
+        "name": "Edvin Sæther",
         "points": 1014
       },
       {
         "rank": 62,
-        "name": "Edvin Sæther",
+        "name": "Sebastian Nguyen Helvik",
         "points": 1014
       },
       {
@@ -5447,12 +5447,12 @@
       },
       {
         "rank": 85,
-        "name": "Theo Wingård Dall",
+        "name": "Oscar Solheim Birkeland",
         "points": 959
       },
       {
         "rank": 85,
-        "name": "Oscar Solheim Birkeland",
+        "name": "Theo Wingård Dall",
         "points": 959
       },
       {
@@ -5477,22 +5477,22 @@
       },
       {
         "rank": 91,
-        "name": "Noah Gabler-Freding",
-        "points": 950
-      },
-      {
-        "rank": 91,
         "name": "Hemanathan Deekshith",
         "points": 950
       },
       {
-        "rank": 93,
-        "name": "Anton Lund Onarheim",
-        "points": 949
+        "rank": 91,
+        "name": "Noah Gabler-Freding",
+        "points": 950
       },
       {
         "rank": 93,
         "name": "Ulrik Narheim",
+        "points": 949
+      },
+      {
+        "rank": 93,
+        "name": "Anton Lund Onarheim",
         "points": 949
       },
       {
@@ -5507,17 +5507,17 @@
       },
       {
         "rank": 97,
+        "name": "Henry Jenssen",
+        "points": 946
+      },
+      {
+        "rank": 97,
         "name": "Eli Ryhs Bodie",
         "points": 946
       },
       {
         "rank": 97,
         "name": "Theodor Philippe Landicho Sundnes",
-        "points": 946
-      },
-      {
-        "rank": 97,
-        "name": "Henry Jenssen",
         "points": 946
       },
       {
@@ -5532,17 +5532,17 @@
       },
       {
         "rank": 102,
-        "name": "Kristian Tønnesen Tunås",
-        "points": 943
-      },
-      {
-        "rank": 102,
         "name": "Johannes Røine",
         "points": 943
       },
       {
         "rank": 102,
         "name": "August Reynert Marfjord",
+        "points": 943
+      },
+      {
+        "rank": 102,
+        "name": "Kristian Tønnesen Tunås",
         "points": 943
       },
       {
@@ -5572,12 +5572,12 @@
       },
       {
         "rank": 110,
-        "name": "Max Tveit",
+        "name": "Yashraaj Shinganmakki",
         "points": 936
       },
       {
         "rank": 110,
-        "name": "Yashraaj Shinganmakki",
+        "name": "Max Tveit",
         "points": 936
       },
       {
@@ -5632,17 +5632,17 @@
       },
       {
         "rank": 122,
-        "name": "Felix Næss",
-        "points": 925
-      },
-      {
-        "rank": 122,
         "name": "David Seyum",
         "points": 925
       },
       {
+        "rank": 122,
+        "name": "Felix Næss",
+        "points": 925
+      },
+      {
         "rank": 124,
-        "name": "Sigurd Emsell Larsen",
+        "name": "Sigurd Olaussen",
         "points": 924
       },
       {
@@ -5652,7 +5652,7 @@
       },
       {
         "rank": 124,
-        "name": "Sigurd Olaussen",
+        "name": "Sigurd Emsell Larsen",
         "points": 924
       },
       {
@@ -5662,12 +5662,12 @@
       },
       {
         "rank": 128,
-        "name": "Arthur Lagadec",
+        "name": "Dennis Xu",
         "points": 921
       },
       {
         "rank": 128,
-        "name": "Dennis Xu",
+        "name": "Arthur Lagadec",
         "points": 921
       },
       {
@@ -5722,18 +5722,13 @@
       },
       {
         "rank": 140,
-        "name": "Erik Wenaas",
-        "points": 905
-      },
-      {
-        "rank": 140,
         "name": "Mikkel R Hongslo",
         "points": 905
       },
       {
-        "rank": 142,
-        "name": "Eskil Ness Valvatna",
-        "points": 900
+        "rank": 140,
+        "name": "Erik Wenaas",
+        "points": 905
       },
       {
         "rank": 142,
@@ -5747,7 +5742,7 @@
       },
       {
         "rank": 142,
-        "name": "Matheo Alexander Sell",
+        "name": "Bojan Grkovic",
         "points": 900
       },
       {
@@ -5757,7 +5752,12 @@
       },
       {
         "rank": 142,
-        "name": "Bojan Grkovic",
+        "name": "Eskil Ness Valvatna",
+        "points": 900
+      },
+      {
+        "rank": 142,
+        "name": "Matheo Alexander Sell",
         "points": 900
       },
       {
@@ -5782,12 +5782,12 @@
       },
       {
         "rank": 152,
-        "name": "Theo Gilje",
+        "name": "Hans Kibsgaard Johnsrud",
         "points": 896
       },
       {
         "rank": 152,
-        "name": "Hans Kibsgaard Johnsrud",
+        "name": "Theo Gilje",
         "points": 896
       },
       {
@@ -5802,11 +5802,6 @@
       },
       {
         "rank": 156,
-        "name": "Henry Ngoc Nguyen",
-        "points": 891
-      },
-      {
-        "rank": 156,
         "name": "Maximilian Siljan-Kermit",
         "points": 891
       },
@@ -5816,8 +5811,13 @@
         "points": 891
       },
       {
+        "rank": 156,
+        "name": "Henry Ngoc Nguyen",
+        "points": 891
+      },
+      {
         "rank": 159,
-        "name": "Tobias Aandal",
+        "name": "William Rohde-Asbjørnsen",
         "points": 890
       },
       {
@@ -5827,7 +5827,7 @@
       },
       {
         "rank": 159,
-        "name": "William Rohde-Asbjørnsen",
+        "name": "Tobias Aandal",
         "points": 890
       },
       {
@@ -5847,12 +5847,12 @@
       },
       {
         "rank": 165,
-        "name": "Daniel Skaarud-Burgos",
+        "name": "Henrik Jensen Åberg",
         "points": 883
       },
       {
         "rank": 165,
-        "name": "Henrik Jensen Åberg",
+        "name": "Daniel Skaarud-Burgos",
         "points": 883
       },
       {
@@ -5892,12 +5892,12 @@
       },
       {
         "rank": 174,
-        "name": "Viktor Olsen",
+        "name": "Stefan Gromala",
         "points": 879
       },
       {
         "rank": 174,
-        "name": "Stefan Gromala",
+        "name": "Viktor Olsen",
         "points": 879
       },
       {
@@ -5972,12 +5972,12 @@
       },
       {
         "rank": 190,
-        "name": "Helge Mellbye",
+        "name": "Luka Wiqvist",
         "points": 850
       },
       {
         "rank": 190,
-        "name": "Luka Wiqvist",
+        "name": "Helge Mellbye",
         "points": 850
       },
       {
@@ -6092,12 +6092,12 @@
       },
       {
         "rank": 214,
-        "name": "Trym Bråtane",
+        "name": "Matteus Egeland",
         "points": 813
       },
       {
         "rank": 214,
-        "name": "Matteus Egeland",
+        "name": "Trym Bråtane",
         "points": 813
       },
       {
@@ -6107,13 +6107,18 @@
       },
       {
         "rank": 217,
-        "name": "Edvin Linchausen",
+        "name": "Bo Kristian Trollnes Strømsvåg",
         "points": 810
       },
       {
         "rank": 217,
-        "name": "Bo Kristian Trollnes Strømsvåg",
+        "name": "Edvin Linchausen",
         "points": 810
+      },
+      {
+        "rank": 219,
+        "name": "Lars Johan Reinholdtsen",
+        "points": 808
       },
       {
         "rank": 219,
@@ -6123,11 +6128,6 @@
       {
         "rank": 219,
         "name": "Nikolai Theis-Haugland",
-        "points": 808
-      },
-      {
-        "rank": 219,
-        "name": "Lars Johan Reinholdtsen",
         "points": 808
       },
       {
@@ -6152,42 +6152,7 @@
       },
       {
         "rank": 226,
-        "name": "Aksel Søfteland",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Hanny Sørlie-Noor",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Ross Ozolins",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Hirad Zabihinia",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Daniel Torgersen-Garten",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Sander Skaret",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Håkon Skjønhaug",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Mats Oesmann",
+        "name": "Filip Sollid Hamle",
         "points": 800
       },
       {
@@ -6197,22 +6162,7 @@
       },
       {
         "rank": 226,
-        "name": "Micael Nybakk",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Christopher Frestad",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Filip Sollid Hamle",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Fridtjof Ravlo",
+        "name": "Petter Michelsen Sælid",
         "points": 800
       },
       {
@@ -6222,27 +6172,17 @@
       },
       {
         "rank": 226,
-        "name": "Aditya Kolan",
+        "name": "Fridtjof Ravlo",
         "points": 800
       },
       {
         "rank": 226,
-        "name": "Fabian Polozov Mikkelsen",
+        "name": "Sander Skaret",
         "points": 800
       },
       {
         "rank": 226,
-        "name": "Eskil Eikeland Tveit",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Reha Gurdogan",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Baldur Bjarnason",
+        "name": "Hanny Sørlie-Noor",
         "points": 800
       },
       {
@@ -6252,27 +6192,87 @@
       },
       {
         "rank": 226,
-        "name": "Khalid Yusuf Noor",
+        "name": "Micael Nybakk",
         "points": 800
       },
       {
         "rank": 226,
-        "name": "Noah Jane",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Oscar Matheus Skjærli",
-        "points": 800
-      },
-      {
-        "rank": 226,
-        "name": "Nicolai Dyrkolbotn",
+        "name": "Aditya Kolan",
         "points": 800
       },
       {
         "rank": 226,
         "name": "Tobias Rørvik",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Christopher Frestad",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Kaspian Smeby-Ryen",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Kristian Westby",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Hirad Zabihinia",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Mats Oesmann",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Daniel Martinsen",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Magnus Lillefuhr",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Håkon Skjønhaug",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Eskil Eikeland Tveit",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Mikkel Vik-Ulven",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Bjørn-Magnus Meiltoft Helnes",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Aksel Søfteland",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Magnus Bjørnebråten Paulsen",
+        "points": 800
+      },
+      {
+        "rank": 226,
+        "name": "Joar Norhagen",
         "points": 800
       }
     ],
@@ -6414,12 +6414,12 @@
       },
       {
         "rank": 27,
-        "name": "Leonora Skalleberg",
+        "name": "Emma Ljones",
         "points": 650
       },
       {
         "rank": 27,
-        "name": "Emma Ljones",
+        "name": "Leonora Skalleberg",
         "points": 650
       },
       {
