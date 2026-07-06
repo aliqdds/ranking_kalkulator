@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05 06:14 UTC",
+  "updated_at": "2026-07-06 06:46 UTC",
   "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
   "classes": {
     "Herrer Elite": [
@@ -1140,21 +1140,21 @@
       },
       {
         "rank": 228,
+        "name": "Agaton Østhagen",
+        "points": 1842
+      },
+      {
+        "rank": 229,
         "name": "Ole Sætra Tønnevold",
         "points": 1840
       },
       {
-        "rank": 229,
+        "rank": 230,
         "name": "Trond Aukland",
         "points": 1838
       },
       {
-        "rank": 230,
-        "name": "Agaton Østhagen",
-        "points": 1835
-      },
-      {
-        "rank": 230,
+        "rank": 231,
         "name": "Jay Impuesto",
         "points": 1835
       },
@@ -1517,22 +1517,22 @@
       },
       {
         "rank": 53,
-        "name": "Sophie Brown-Hanssen",
-        "points": 1363
-      },
-      {
-        "rank": 53,
         "name": "Lise Solem Høeg",
         "points": 1363
       },
       {
-        "rank": 55,
-        "name": "Camilla QinghuaYu Henriksen",
-        "points": 1336
+        "rank": 53,
+        "name": "Sophie Brown-Hanssen",
+        "points": 1363
       },
       {
         "rank": 55,
         "name": "Kristina Aasheim Stenberg",
+        "points": 1336
+      },
+      {
+        "rank": 55,
+        "name": "Camilla QinghuaYu Henriksen",
         "points": 1336
       },
       {
@@ -1682,12 +1682,12 @@
       },
       {
         "rank": 86,
-        "name": "Mona Sigurdsen",
+        "name": "Xiaolin Wang",
         "points": 1090
       },
       {
         "rank": 86,
-        "name": "Xiaolin Wang",
+        "name": "Mona Sigurdsen",
         "points": 1090
       },
       {
@@ -1747,12 +1747,12 @@
       },
       {
         "rank": 99,
-        "name": "Evgeniya Humberseth",
+        "name": "Ane Handegård",
         "points": 1021
       },
       {
         "rank": 99,
-        "name": "Ane Handegård",
+        "name": "Evgeniya Humberseth",
         "points": 1021
       },
       {
@@ -1877,12 +1877,12 @@
       },
       {
         "rank": 125,
-        "name": "Monica Brekke Førland",
+        "name": "Olga Kovalenko",
         "points": 900
       },
       {
         "rank": 125,
-        "name": "Nathaniel Spira",
+        "name": "Monica Brekke Førland",
         "points": 900
       },
       {
@@ -1892,7 +1892,7 @@
       },
       {
         "rank": 125,
-        "name": "Elisabeth Nesheim Bjorøy",
+        "name": "Nathaniel Spira",
         "points": 900
       },
       {
@@ -1902,12 +1902,12 @@
       },
       {
         "rank": 125,
-        "name": "Olga Kovalenko",
+        "name": "Emma Källerö",
         "points": 900
       },
       {
         "rank": 125,
-        "name": "Emma Källerö",
+        "name": "Elisabeth Nesheim Bjorøy",
         "points": 900
       },
       {
@@ -2205,7 +2205,7 @@
       {
         "rank": 30,
         "name": "Agaton Østhagen",
-        "points": 1835
+        "points": 1842
       },
       {
         "rank": 31,
@@ -2334,18 +2334,18 @@
       },
       {
         "rank": 56,
-        "name": "Derrick Tang",
-        "points": 1662
-      },
-      {
-        "rank": 57,
         "name": "Albert Martin Palma Nærland",
         "points": 1662
       },
       {
-        "rank": 58,
+        "rank": 57,
         "name": "Andreas Bråthen Sataøen",
         "points": 1656
+      },
+      {
+        "rank": 58,
+        "name": "Derrick Tang",
+        "points": 1652
       },
       {
         "rank": 59,
@@ -3544,7 +3544,7 @@
       {
         "rank": 13,
         "name": "Agaton Østhagen",
-        "points": 1835
+        "points": 1842
       },
       {
         "rank": 14,
@@ -3604,7 +3604,7 @@
       {
         "rank": 25,
         "name": "Derrick Tang",
-        "points": 1662
+        "points": 1652
       },
       {
         "rank": 26,
@@ -4878,7 +4878,7 @@
       {
         "rank": 4,
         "name": "Agaton Østhagen",
-        "points": 1835
+        "points": 1842
       },
       {
         "rank": 5,
@@ -4888,7 +4888,7 @@
       {
         "rank": 6,
         "name": "Derrick Tang",
-        "points": 1662
+        "points": 1652
       },
       {
         "rank": 7,
