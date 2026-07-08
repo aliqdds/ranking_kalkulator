@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07 06:17 UTC",
+  "updated_at": "2026-07-08 05:30 UTC",
   "source": "Uoffisiell datasamling fra offentlig tilgjengelig rankingvisning",
   "classes": {
     "Herrer Elite": [
@@ -1527,12 +1527,12 @@
       },
       {
         "rank": 55,
-        "name": "Kristina Aasheim Stenberg",
+        "name": "Camilla QinghuaYu Henriksen",
         "points": 1336
       },
       {
         "rank": 55,
-        "name": "Camilla QinghuaYu Henriksen",
+        "name": "Kristina Aasheim Stenberg",
         "points": 1336
       },
       {
@@ -1877,12 +1877,7 @@
       },
       {
         "rank": 125,
-        "name": "Olga Kovalenko",
-        "points": 900
-      },
-      {
-        "rank": 125,
-        "name": "Monica Brekke Førland",
+        "name": "Nathaniel Spira",
         "points": 900
       },
       {
@@ -1892,7 +1887,17 @@
       },
       {
         "rank": 125,
-        "name": "Nathaniel Spira",
+        "name": "Monica Brekke Førland",
+        "points": 900
+      },
+      {
+        "rank": 125,
+        "name": "Elisabeth Nesheim Bjorøy",
+        "points": 900
+      },
+      {
+        "rank": 125,
+        "name": "Maria Sylvia Helena Riddarsporre",
         "points": 900
       },
       {
@@ -1907,151 +1912,151 @@
       },
       {
         "rank": 125,
-        "name": "Elisabeth Nesheim Bjorøy",
+        "name": "Olga Kovalenko",
         "points": 900
       },
       {
-        "rank": 132,
+        "rank": 133,
         "name": "Grete Irene Johnsrud",
         "points": 898
       },
       {
-        "rank": 133,
+        "rank": 134,
         "name": "Gøtestam Frida Elise",
         "points": 895
       },
       {
-        "rank": 134,
+        "rank": 135,
         "name": "Gunnel Dunserud",
         "points": 894
       },
       {
-        "rank": 135,
+        "rank": 136,
         "name": "Lene Pettersen",
         "points": 891
       },
       {
-        "rank": 136,
+        "rank": 137,
         "name": "Helena Åsland Sivertsen",
         "points": 889
       },
       {
-        "rank": 137,
+        "rank": 138,
         "name": "Mary Grace Yuan Labaria",
         "points": 887
       },
       {
-        "rank": 138,
+        "rank": 139,
         "name": "Katarina Arntsen",
         "points": 874
       },
       {
-        "rank": 139,
+        "rank": 140,
         "name": "Sissel Leffmann",
         "points": 872
       },
       {
-        "rank": 140,
+        "rank": 141,
         "name": "Ellen Thorsen Lie",
         "points": 869
       },
       {
-        "rank": 141,
+        "rank": 142,
         "name": "Silje Lien Aasheim",
         "points": 865
       },
       {
-        "rank": 142,
+        "rank": 143,
         "name": "Iselinn Stuve",
         "points": 864
       },
       {
-        "rank": 143,
+        "rank": 144,
         "name": "Randi Elisabeth Jenssen",
         "points": 863
       },
       {
-        "rank": 144,
+        "rank": 145,
         "name": "Senada Kasumovic Imer",
         "points": 858
       },
       {
-        "rank": 145,
+        "rank": 146,
         "name": "Tatiana Kunakina",
         "points": 855
       },
       {
-        "rank": 146,
+        "rank": 147,
         "name": "Miriam Larsen",
         "points": 851
       },
       {
-        "rank": 147,
+        "rank": 148,
         "name": "Anne Mari Nytrøen",
         "points": 847
       },
       {
-        "rank": 148,
+        "rank": 149,
         "name": "Ingeborg Eidesen Lian",
         "points": 846
       },
       {
-        "rank": 149,
+        "rank": 150,
         "name": "Janne Reum",
         "points": 839
       },
       {
-        "rank": 150,
+        "rank": 151,
         "name": "Åse Ekra",
         "points": 836
       },
       {
-        "rank": 151,
+        "rank": 152,
         "name": "Gunn Vestli Røgeberg",
         "points": 834
       },
       {
-        "rank": 152,
+        "rank": 153,
         "name": "Helena Ringheim",
         "points": 826
       },
       {
-        "rank": 153,
+        "rank": 154,
         "name": "Emma Torp",
         "points": 824
       },
       {
-        "rank": 154,
+        "rank": 155,
         "name": "Frida Dahl Salvesen",
         "points": 822
       },
       {
-        "rank": 155,
+        "rank": 156,
         "name": "Martine Wick Løberg",
         "points": 815
       },
       {
-        "rank": 156,
+        "rank": 157,
         "name": "Rachel Ringheim",
         "points": 811
       },
       {
-        "rank": 157,
+        "rank": 158,
         "name": "Pauline Sophie Erlandsen",
         "points": 810
       },
       {
-        "rank": 158,
+        "rank": 159,
         "name": "Kamila Lazarenko",
         "points": 808
       },
       {
-        "rank": 159,
+        "rank": 160,
         "name": "Lilly Kristiansen Skoglund",
         "points": 806
       },
       {
-        "rank": 160,
+        "rank": 161,
         "name": "Anja Flote",
         "points": 805
       }
